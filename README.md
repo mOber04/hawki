@@ -25,6 +25,7 @@ hawki ingests a live camera feed and runs a full AI pipeline on the edge:
 | RAM | 8 GB (shared CPU/GPU) |
 | Storage | 1 TB NVMe SSD |
 | OS | Ubuntu-based JetPack (L4T) |
+| Webcam | Undecided |
 
 ## Pipeline architecture
 
