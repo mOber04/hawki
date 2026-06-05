@@ -1,0 +1,22 @@
+camera:
+  device_id: 0        # 0 = first connected camera; change if you have multiple
+  width: 1280
+  height: 720
+  fps: 30
+
+detection:
+  model_path: models/yolov8n.pt   # 'n' = nano, the smallest/fastest YOLOv8 variant
+  confidence_threshold: 0.5       # only show detections above 50% confidence
+  iou_threshold: 0.45             # controls how aggressively overlapping boxes are merged
+  device: cuda                    # 'cuda' for GPU, 'cpu' as fallback
+  imgsz: 640                      # inference resolution (must be multiple of 32)
+
+logging:
+  level: INFO
+  log_dir: logs/
+
+# Phase 3+: behavioral rule engine thresholds (not used yet)
+rules:
+  loiter_seconds: 10
+  crowd_threshold: 5
+  llm_batch_interval_seconds: 30

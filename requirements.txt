@@ -1,0 +1,12 @@
+# Core vision and detection
+# NOTE: On JetPack, PyTorch and OpenCV are pre-installed — do NOT pip install those.
+# Install everything else with: pip install --break-system-packages -r requirements.txt
+ultralytics>=8.0.0   # YOLOv8 — includes model download, inference, and annotation tools
+pyyaml>=6.0          # Parses config.yaml
+numpy>=1.24          # Array math (ultralytics depends on this anyway)
+
+# Phase 2+ (uncomment as needed)
+# supervision>=0.18   # ByteTrack wrapper — easier than raw ByteTrack on ARM
+# fastapi>=0.110      # Dashboard backend
+# uvicorn>=0.29       # ASGI server for FastAPI
+# websockets>=12.0    # Live feed streaming

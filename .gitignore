@@ -1,0 +1,40 @@
+# Model weights and TensorRT engines (large binary files — never commit these)
+models/*.pt
+models/*.engine
+models/*.onnx
+
+# Datasets
+data/visDrone/
+
+# Runtime logs, SQLite DB, and frame snapshots
+logs/*.db
+logs/*.jpg
+logs/*.png
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (never commit secrets)
+.env
+
+# macOS junk
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Claude Code context file (internal dev notes, not for public repo)
+claude.md
+CLAUDE.md
